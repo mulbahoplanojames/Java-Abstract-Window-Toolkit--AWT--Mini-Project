@@ -495,21 +495,21 @@ public class Mini_Project {
 
         });
 
-        // // ! Clear Button
-        // clearButton.addActionListener(e -> {
+        // ! Clear Button
+        clearButton.addActionListener(e -> {
 
-        // /*
-        // * Reseting the various TextFields to an Empty String
-        // */
-        // moduleOnTextField.setText("");
-        // moduleTwoTextField.setText("");
-        // moduleThreeTextField.setText("");
-        // moduleFourTextField.setText("");
-        // moduleFiveTextField.setText("");
-        // moduleSixTextField.setText("");
-        // moduleSevenTextField.setText("");
-        // moduleEightTextField.setText("");
-        // });
+            /*
+             * Reseting the various TextFields to an Empty String
+             */
+            moduleOnTextField.setText("");
+            moduleTwoTextField.setText("");
+            moduleThreeTextField.setText("");
+            moduleFourTextField.setText("");
+            moduleFiveTextField.setText("");
+            moduleSixTextField.setText("");
+            moduleSevenTextField.setText("");
+            moduleEightTextField.setText("");
+        });
 
         // gradeButton.addActionListener(e -> {
         // /*
