@@ -511,120 +511,116 @@ public class Mini_Project {
             moduleEightTextField.setText("");
         });
 
-        // gradeButton.addActionListener(e -> {
-        // /*
-        // * Getting the text value from the various input fields and saving them into a
-        // * Variable
-        // */
-        // double AdvanceEnglish = Integer.parseInt(moduleOnTextField.getText());
-        // double CShartPrograming = Integer.parseInt(moduleTwoTextField.getText());
-        // double JavaProgramming = Integer.parseInt(moduleThreeTextField.getText());
-        // double SystemAnalysisAndDesign =
-        // Integer.parseInt(moduleFourTextField.getText());
-        // double SyetemAdministrationLinux =
-        // Integer.parseInt(moduleFiveTextField.getText());
-        // double MobileAppDevelopment = Integer.parseInt(moduleSixTextField.getText());
-        // double HumanComputerInteraction =
-        // Integer.parseInt(moduleSevenTextField.getText());
-        // double ASPNET = Integer.parseInt(moduleEightTextField.getText());
+        gradeButton.addActionListener(e -> {
+            /*
+             * Getting the text value from the various input fields and saving them into a
+             * Variable
+             */
+            double AdvanceEnglish = Integer.parseInt(moduleOnTextField.getText());
+            double CShartPrograming = Integer.parseInt(moduleTwoTextField.getText());
+            double JavaProgramming = Integer.parseInt(moduleThreeTextField.getText());
+            double SystemAnalysisAndDesign = Integer.parseInt(moduleFourTextField.getText());
+            double SyetemAdministrationLinux = Integer.parseInt(moduleFiveTextField.getText());
+            double MobileAppDevelopment = Integer.parseInt(moduleSixTextField.getText());
+            double HumanComputerInteraction = Integer.parseInt(moduleSevenTextField.getText());
+            double ASPNET = Integer.parseInt(moduleEightTextField.getText());
 
-        // /*
-        // * Creating a conditional statement to check if the marks obtain from the
-        // * various TextFields are properly validated
-        // */
-        // if (AdvanceEnglish > 100 || AdvanceEnglish < 0 || CShartPrograming > 100 ||
-        // CShartPrograming < 0
-        // || JavaProgramming > 100 || JavaProgramming < 0 || SyetemAdministrationLinux
-        // > 100
-        // || SyetemAdministrationLinux < 0 || SystemAnalysisAndDesign > 100 ||
-        // SystemAnalysisAndDesign < 0
-        // || HumanComputerInteraction > 100 || HumanComputerInteraction < 0 ||
-        // MobileAppDevelopment > 100
-        // || MobileAppDevelopment < 0 || ASPNET > 100 || ASPNET < 0) {
+            /*
+             * Creating a conditional statement to check if the marks obtain from the
+             * various TextFields are properly validated
+             */
+            if (AdvanceEnglish > 100 || AdvanceEnglish < 0 || CShartPrograming > 100 ||
+                    CShartPrograming < 0
+                    || JavaProgramming > 100 || JavaProgramming < 0 || SyetemAdministrationLinux > 100
+                    || SyetemAdministrationLinux < 0 || SystemAnalysisAndDesign > 100 ||
+                    SystemAnalysisAndDesign < 0
+                    || HumanComputerInteraction > 100 || HumanComputerInteraction < 0 ||
+                    MobileAppDevelopment > 100
+                    || MobileAppDevelopment < 0 || ASPNET > 100 || ASPNET < 0) {
 
-        // gradeTextField.setText("Please Enter a Valid Mark between 0 and 100");
-        // gradeTextField.setForeground(Color.red);
+                gradeTextField.setText("Please Enter a Valid Mark between 0 and 100");
+                gradeTextField.setForeground(Color.red);
 
-        // } else {
+            } else {
 
-        // double sum = AdvanceEnglish + CShartPrograming + JavaProgramming +
-        // SyetemAdministrationLinux
-        // + SystemAnalysisAndDesign + MobileAppDevelopment + HumanComputerInteraction +
-        // ASPNET;
+                double sum = AdvanceEnglish + CShartPrograming + JavaProgramming +
+                        SyetemAdministrationLinux
+                        + SystemAnalysisAndDesign + MobileAppDevelopment + HumanComputerInteraction +
+                        ASPNET;
 
-        // double average = sum / 8;
+                double average = sum / 8;
 
-        // /*
-        // * A conditional statement to check the user Grade base on positions
-        // */
-        // if (average < 100 && average >= 90) {
-        // gradeTextField.setText("First Class Honour, Upper Division");
-        // } else if (average < 89 && average >= 80) {
-        // gradeTextField.setText("First Class Honour, Lower Division");
-        // } else if (average < 79 && average >= 70) {
-        // gradeTextField.setText("Second Class Honour, Upper Division");
-        // } else if (average < 69 && average >= 60) {
-        // gradeTextField.setText("Second Class Honour, Lower Division");
-        // } else if (average < 59 && average >= 50) {
-        // gradeTextField.setText("Fair for promotion");
-        // } else {
-        // gradeTextField.setText("You have to Repeat");
-        // }
+                /*
+                 * A conditional statement to check the user Grade base on positions
+                 */
+                if (average < 100 && average >= 90) {
+                    gradeTextField.setText("First Class Honour, Upper Division");
+                } else if (average < 89 && average >= 80) {
+                    gradeTextField.setText("First Class Honour, Lower Division");
+                } else if (average < 79 && average >= 70) {
+                    gradeTextField.setText("Second Class Honour, Upper Division");
+                } else if (average < 69 && average >= 60) {
+                    gradeTextField.setText("Second Class Honour, Lower Division");
+                } else if (average < 59 && average >= 50) {
+                    gradeTextField.setText("Fair for promotion");
+                } else {
+                    gradeTextField.setText("You have to Repeat");
+                }
 
-        // }
+            }
 
-        // /*
-        // * Conditions to highlight where the error or problem is coming from when the
-        // * user enter a marks that is not between 0 and 100
-        // */
-        // if (AdvanceEnglish > 100 || AdvanceEnglish < 0) {
-        // moduleOnTextField.setBackground(Color.red);
-        // } else {
-        // moduleOnTextField.setBackground(Color.WHITE);
-        // }
+            /*
+             * Conditions to highlight where the error or problem is coming from when the
+             * user enter a marks that is not between 0 and 100
+             */
+            if (AdvanceEnglish > 100 || AdvanceEnglish < 0) {
+                moduleOnTextField.setBackground(Color.red);
+            } else {
+                moduleOnTextField.setBackground(Color.WHITE);
+            }
 
-        // if (CShartPrograming > 100 || CShartPrograming < 0) {
-        // moduleTwoTextField.setBackground(Color.red);
-        // } else {
-        // moduleTwoTextField.setBackground(Color.WHITE);
-        // }
+            if (CShartPrograming > 100 || CShartPrograming < 0) {
+                moduleTwoTextField.setBackground(Color.red);
+            } else {
+                moduleTwoTextField.setBackground(Color.WHITE);
+            }
 
-        // if (JavaProgramming > 100 || JavaProgramming < 0) {
-        // moduleThreeTextField.setBackground(Color.red);
-        // } else {
-        // moduleThreeTextField.setBackground(Color.WHITE);
-        // }
+            if (JavaProgramming > 100 || JavaProgramming < 0) {
+                moduleThreeTextField.setBackground(Color.red);
+            } else {
+                moduleThreeTextField.setBackground(Color.WHITE);
+            }
 
-        // if (SystemAnalysisAndDesign > 100 || SystemAnalysisAndDesign < 0) {
-        // moduleFourTextField.setBackground(Color.red);
-        // } else {
-        // moduleFourTextField.setBackground(Color.WHITE);
-        // }
+            if (SystemAnalysisAndDesign > 100 || SystemAnalysisAndDesign < 0) {
+                moduleFourTextField.setBackground(Color.red);
+            } else {
+                moduleFourTextField.setBackground(Color.WHITE);
+            }
 
-        // if (SyetemAdministrationLinux > 100 || SyetemAdministrationLinux < 0) {
-        // moduleFiveTextField.setBackground(Color.red);
-        // } else {
-        // moduleFiveTextField.setBackground(Color.WHITE);
-        // }
+            if (SyetemAdministrationLinux > 100 || SyetemAdministrationLinux < 0) {
+                moduleFiveTextField.setBackground(Color.red);
+            } else {
+                moduleFiveTextField.setBackground(Color.WHITE);
+            }
 
-        // if (MobileAppDevelopment > 100 || MobileAppDevelopment < 0) {
-        // moduleSixTextField.setBackground(Color.red);
-        // } else {
-        // moduleSixTextField.setBackground(Color.WHITE);
-        // }
+            if (MobileAppDevelopment > 100 || MobileAppDevelopment < 0) {
+                moduleSixTextField.setBackground(Color.red);
+            } else {
+                moduleSixTextField.setBackground(Color.WHITE);
+            }
 
-        // if (HumanComputerInteraction > 100 || HumanComputerInteraction < 0) {
-        // moduleSevenTextField.setBackground(Color.red);
-        // } else {
-        // moduleSevenTextField.setBackground(Color.WHITE);
-        // }
+            if (HumanComputerInteraction > 100 || HumanComputerInteraction < 0) {
+                moduleSevenTextField.setBackground(Color.red);
+            } else {
+                moduleSevenTextField.setBackground(Color.WHITE);
+            }
 
-        // if (ASPNET > 100 || ASPNET < 0) {
-        // moduleEightTextField.setBackground(Color.red);
-        // } else {
-        // moduleEightTextField.setBackground(Color.WHITE);
-        // }
-        // });
+            if (ASPNET > 100 || ASPNET < 0) {
+                moduleEightTextField.setBackground(Color.red);
+            } else {
+                moduleEightTextField.setBackground(Color.WHITE);
+            }
+        });
 
     }
 
