@@ -2,7 +2,7 @@ package Src;
 
 import java.awt.*;
 
-public class Pratice {
+public class Demo2 {
 
     public static void main(String[] args) {
 
